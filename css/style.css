@@ -1,0 +1,75 @@
+body {
+  background-color: rgb(236, 231, 219);
+  color: rgb(71, 67, 6);
+}
+
+.bannar {
+  height: 800px;
+  background-image: url(../assets/1_3_2024\ 11_48_36\ PM.png);
+  background-size: cover;
+}
+.bannar-content {
+  background-color: rgb(215, 208, 191);
+}
+.gap-md-5 {
+  gap: 100px;
+}
+.custom-nav {
+  font-size: 20px;
+  position: relative;
+  color: rgb(71, 67, 6);
+}
+.custom-nav::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: blue;
+  position: absolute;
+  right: 0;
+  bottom: -8px;
+  border-radius: 50px;
+  /* transition: 0.6s; */
+}
+/* .custom-nav:hover::after {
+  width: 100%;
+} */
+
+.text-color {
+  color: rgb(188, 152, 247);
+}
+.text-div {
+  padding-top: 250px;
+  color: rgb(71, 67, 6);
+}
+.text-size {
+  font-size: 70px;
+}
+
+.image-about {
+  height: 580px;
+  width: 400px;
+  background-color: rgb(215, 208, 191);
+  border-radius: 20px;
+}
+
+.text-custom {
+  cursor: pointer;
+  position: relative;
+}
+.text-custom::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: blue;
+  position: absolute;
+  right: 0;
+  bottom: -8px;
+  border-radius: 50px;
+  transition: 0.6s;
+}
+:hover::after {
+  width: 100%;
+}
+.text-custom.active-link::after {
+  width: 50%;
+}
